@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "QLang Translator",
+  "description": "QLang KZ->RU Translator",
+  "version": "0.2",
+  "browser_action": {
+    "default_icon": "favicon.ico",
+    "default_popup": "popup/popup.html",
+    "default_title": "QLang"
+  },
+  "content_scripts": [
+    {
+      "css": ["style.css"],
+      "matches": ["<all_urls>"],
+      "js": [
+        "content.js",
+        "third_party/jquery-3.3.1.min.js",
+        "third_party/jquery-ui.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "third_party/jquery-3.3.1.min.js",
+      "background.js",
+      "third_party/jquery-ui.js"
+    ]
+  },
+  "permissions": ["tabs", "http://*/*", "https://*/*"]
+}

@@ -1,0 +1,39 @@
+.rect {
+  font-family: arial, verdana;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  z-index: 10000;
+}
+
+.rect hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rect a:hover {
+  background-color: white;
+  color: blue;
+}
+
+.translation {
+  color: blue;
+  text-decoration: underline;
+  border-bottom-color: #3399ff;
+  cursor: pointer;
+}
+
+#audio {
+  float: left !important;
+  background: url(https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/volume-circle-blue-16.png);
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  margin-top: 3px;
+  cursor: pointer;
+}
